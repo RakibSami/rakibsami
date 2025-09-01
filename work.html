@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Work - Rakib Sami</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /*======================
+    404 Page Scoped Styling
+=======================*/
+
+/* 404 Section */
+.page_404 {
+    padding: 80px 20px;
+    text-align: center;
+    color: #5a4632;
+    font-family: 'Arvo', serif;
+    position: relative;
+    z-index: 1;
+}
+
+/* Background canvas & blur overlay only for 404 section */
+.page_404 #bgCanvas,
+.page_404 .blur-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.page_404 .blur-overlay {
+    backdrop-filter: blur(15px);
+    background: rgba(255, 251, 245, 0.3);
+}
+
+/* 404 Animation */
+.page_404 .four_zero_four_bg {
+    background-image: url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif');
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 30px;
+}
+
+.page_404 .four_zero_four_bg h1 {
+    font-size: 120px;
+    color: #8b6d4b;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.page_404 .contant_box_404 h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: inherit;
+}
+
+.page_404 .contant_box_404 p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: inherit;
+}
+
+/* Button styling */
+.page_404 .link_404 {
+    color: #fff !important;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #8b6d4b, #6b4c2f);
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.page_404 .link_404:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(139,109,76,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page_404 .four_zero_four_bg {
+        height: 250px;
+    }
+    .page_404 .four_zero_four_bg h1 {
+        font-size: 80px;
+    }
+    .page_404 .contant_box_404 h3 {
+        font-size: 24px;
+    }
+}
+
+/* Dark Mode */
+body.dark .page_404 {
+    color: #e0e0e0;
+}
+
+body.dark .page_404 .four_zero_four_bg h1 {
+    color: #ff8a65;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+body.dark .page_404 .blur-overlay {
+    background: rgba(18,18,18,0.4);
+}
+
+body.dark .page_404 .link_404 {
+    background: linear-gradient(135deg, #ff5722, #ff8a65);
+}
+
+body.dark .page_404 .link_404:hover {
+    box-shadow: 0 12px 25px rgba(255,87,34,0.5);
+}
+
+  </style>
+  
+</head>
+<body>
+
+<!-- Animated Background Canvas -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- Blur Overlay -->
+<div class="blur-overlay"></div>
+
+<!-- Animated Background Canvas -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- Blur Overlay -->
+<div class="blur-overlay"></div>
+
+<section class="page_404">
+    <div class="container">
+        <div class="row">    
+            <div class="col-sm-12 text-center">
+                <div class="four_zero_four_bg">
+                    <h1> 404 </h1>
+                </div>
+                <div class="contant_box_404">
+                    <h3 class="h2"> We are Still Working on It </h3>
+                    <p> Hope we will upload our project soon ! </p>
+                    <a href="" class="link_404">Go to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Bootstrap JS and Custom Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

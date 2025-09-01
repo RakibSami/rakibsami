@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Social Links - Rakib Sami</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+  
+  .social-stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .social-stats .stat-item {
+    text-align: center;
+    flex: 1 1 120px; /
+    min-width: 120px;
+  }
+
+  .stat-number {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .stat-label {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+  }
+
+  @media (max-width: 768px) {
+    .stat-number {
+      font-size: 2rem;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+    }
+  }
+  </style>
+</head>
+<body>
+
+<!-- Animated Background Canvas -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- Blur Overlay -->
+<div class="blur-overlay"></div>
+
+<!-- Links Container -->
+<div class="links-container">
+  <div class="links-box">
+    <h2>My Socials</h2>
+
+    <!-- Profile Card -->
+    <div class="profile-card">
+      <img src="sami.jpg" alt="Rakib Sami" class="profile-img">
+      <h3>Rakib Sami</h3>
+      <p>Web Developer & Designer</p>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-links">
+      <div class="link-item youtube">
+        <a href="https://youtube.com/theultimategamers9" target="_blank">
+          <i class="fab fa-youtube"></i>
+          <span>YouTube</span>
+        </a>
+      </div>
+
+      <div class="link-item facebook">
+        <a href="https://facebook.com/rsgaming.9266" target="_blank">
+          <i class="fab fa-facebook"></i>
+          <span>Facebook</span>
+        </a>
+      </div>
+
+      <div class="link-item pinterest">
+        <a href="https://pinterest.com/rakibsami17" target="_blank">
+          <i class="fab fa-pinterest"></i>
+          <span>Pinterest</span>
+        </a>
+      </div>
+
+      <div class="link-item twitter">
+        <a href="https://x.com/RakibSami1" target="_blank">
+          <i class="fab fa-x-twitter"></i>
+          <span>X (Twitter)</span>
+        </a>
+      </div>
+
+      <div class="link-item instagram">
+        <a href="https://instagram.com/rakibsami17" target="_blank">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
+
+      <div class="link-item github">
+        <a href="https://github.com/rakibsami" target="_blank">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <div class="link-item linkedin">
+        <a href="https://linkedin.com/in/rakibsami" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+
+      <div class="link-item discord">
+        <a href="https://discord.gg/rakibsami" target="_blank">
+          <i class="fab fa-discord"></i>
+          <span>Discord</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="social-stats">
+      <div class="stat-item">
+        <span class="stat-number" data-target="5200">0</span>
+        <span class="stat-label">Subscribers</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="1500">0</span>
+        <span class="stat-label">Followers</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-number" data-target="10">0</span>
+        <span class="stat-label">Projects</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const statNumbers = document.querySelectorAll('.stat-number');
+
+  statNumbers.forEach(numEl => {
+    const target = parseFloat(numEl.getAttribute('data-target'));
+    let current = 0;
+    const isK = target >= 1000; // 1k or more use 'k'
+
+    const increment = target / 200; // speed control
+
+    function updateNumber() {
+      current += increment;
+      if (current >= target) current = target;
+
+      if (isK) {
+        const displayNum = (current / 1000).toFixed(2);
+        numEl.textContent = displayNum + 'k+';
+      } else {
+        numEl.textContent = Math.floor(current) + '+';
+      }
+
+      if (current < target) requestAnimationFrame(updateNumber);
+    }
+
+    updateNumber();
+  });
+});
+</script>
+
+<!-- Bootstrap JS and Custom Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

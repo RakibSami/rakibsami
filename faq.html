@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ - Rakib Sami</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+</head>
+<body>
+
+<!-- Animated Background Canvas -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- Blur Overlay -->
+<div class="blur-overlay"></div>
+
+
+
+<!-- FAQ Container -->
+<div class="faq-container">
+  <div class="faq-box">
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="accordion" id="faqAccordion">
+      
+      <!-- Question 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true">
+            Which language did you use to create this website?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Just plain HTML, CSS, JavaScript, and some frameworks like Bootstrap. I focus on creating clean, responsive designs that work across all devices.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+            Where did you learn this?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Mostly from YouTube tutorials and online resources. But I was also admitted to NACTAR for formal training. I believe in continuous learning and always stay updated with the latest web technologies.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+            How long have you been designing websites?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            I've been designing and developing websites for over 3 years. I started with basic HTML/CSS and gradually learned JavaScript, responsive design, and various frameworks.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+            Do you work as a freelancer?
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, I take freelance projects alongside my studies. I've worked with various clients to create websites, logos, and digital content. Feel free to contact me if you have a project in mind!
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+            What's your favorite part of web development?
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            I love the creative process of turning ideas into functional, beautiful websites. The problem-solving aspect and seeing a project come to life is incredibly satisfying. I particularly enjoy working on front-end design and user experience.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+            Can I use your designs for my projects?
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            The designs and code showcased here are part of my personal portfolio. Please contact me for permission before using any elements from this website. I'm usually happy to share knowledge and help others learn!
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Bootstrap JS and Custom Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

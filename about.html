@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title> About Me - Rakib Sami </title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+<!-- Animated Background Canvas -->
+<canvas id="bgCanvas"></canvas>
+
+<!-- Blur Overlay -->
+<div class="blur-overlay"></div>
+
+
+
+<!-- Header -->
+<div class="box-head container-fluid">
+  <h6>About Me</h6>
+</div>
+
+<!-- About Section -->
+<section class="container mb-5">
+  <div class="row justify-content-center align-items-center g-4 p-2">
+    <div class="col-md-4 text-center">
+      <img src="sami.jpg" alt="Rakib Sami" class="sami-image img-fluid rounded" />
+    </div>
+    <div class="col-md-7 sami1234">
+      <h4 class="mb-3">I am Rakib Sami</h4>
+         <p>
+      I’m a curious learner who loves exploring new skills, especially in web design and creative projects. Gaming is one of my passions—it challenges me and sparks my imagination.  
+      I also dedicate time to volunteering and work with the Red Crescent, which keeps me grounded and connected to my community.  
+      On top of that, I create content on YouTube, sharing my experiences and ideas with others.  
+      Balancing learning, creativity, gaming, and giving back is what drives me every day. For me, every day is an opportunity to grow, create, and make an impact.
+    </p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Education Section -->
+<section class="container mb-5">
+  <h3>My Education</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="sami1234">
+        <b>HSC in Science</b><br />
+        Armed Police Battalion Public School & College College — 2023 - 2024<br />
+        GPA: 5.00 / 5.00<br />
+        Subjects: Physics, Chemistry, Math, ICT<br />
+        Activities: Science Club Member, Math Olympiad Participant
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="sami1234">
+        <b>SSC in Science</b><br />
+        Amtoli Model Hi -School<br />
+        GPA: 5.00 / 5.00 <br />
+        Subjects: Physics, Chemistry, Math, ICT<br />
+        Activities: Science Club Member, Math Olympiad Participant
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Work Experience Section -->
+<section class="container mb-5">
+  <h3>My Work Experience</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="sami1234">
+        <b>Junior Web Developer</b><br />
+        TechVerse Solutions<br />
+        Jan 2022 – Present<br />
+        <ul>
+          <li>Built and maintained responsive websites using HTML, CSS, Bootstrap, and JavaScript.</li>
+          <li>Integrated REST APIs and worked with backend teams to ensure seamless data flow.</li>
+          <li>Collaborated with designers and QA for agile delivery of projects.</li>
+          <li>Used Git for version control and participated in code reviews.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="sami1234">
+        <b>UI/UX Designer (Intern)</b><br />
+        PixelLab Design Studio<br />
+        Jun 2021 – Dec 2021<br />
+        <ul>
+          <li>Created wireframes, prototypes, and UI mockups for client projects using Figma.</li>
+          <li>Worked with developers to implement pixel-perfect designs.</li>
+          <li>Redesigned existing user interfaces to improve usability and aesthetics.</li>
+          <li>Participated in client meetings and gave design presentations.</li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section class="container mb-5">
+  <h3>My Skills</h3>
+
+  <p>HTML</p>
+  <div class="progress">
+    <div class="progress-bar bg-success" data-target="95">0%</div>
+  </div>
+
+  <p>CSS</p>
+  <div class="progress">
+    <div class="progress-bar bg-info" data-target="85">0%</div>
+  </div>
+
+  <p>JavaScript</p>
+  <div class="progress">
+    <div class="progress-bar bg-warning" data-target="70">0%</div>
+  </div>
+
+  <p>Photoshop</p>
+  <div class="progress">
+    <div class="progress-bar bg-danger" data-target="80">0%</div>
+  </div>
+</section>
+
+<!-- Button trigger modal -->
+<div class="text-center">
+  <button
+    type="button"
+    class="btn btn-primary btn-lg"
+    data-bs-toggle="modal"
+    data-bs-target="#certificationsModal"
+  >
+    View My Certifications
+  </button>
+</div>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="certificationsModal"
+  tabindex="-1"
+  aria-labelledby="certificationsModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered mb-4">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="certificationsModalLabel">My Certifications</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body p-4 ">
+        <b>About My Certifications</b> <br /><br />
+        I have earned several professional certifications that validate my
+        skills and commitment to continuous learning. These include
+        industry-recognized certificates in web development, graphic design,
+        and programming. Each certification represents my dedication to
+        mastering new tools and technologies, enhancing my expertise, and
+        staying updated with the latest trends. These credentials empower me
+        to deliver high-quality work and contribute effectively to any
+        project I take on.
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-primary my-4"
+          data-bs-dismiss="modal"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Bootstrap JS and Custom Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
